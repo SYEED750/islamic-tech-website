@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islamic & Tech Tips BD | AI টুলস, ইসলামিক পোস্ট, টেক টিপস, অনলাইন ইনকাম</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+transition: 0.3s;
+}
+
+/* TOP BAR */
+.topbar{
+background:#0b7a24;
+color:white;
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:14px;
+}
+
+.topbar .icons span{
+margin-left:15px;
+cursor:pointer;
+}
+
+/* HEADER */
+header{
+background:linear-gradient(to right, #e0e8f5,#f0f5fc);
+padding:25px 5%;
+color:#0f2b4d;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+transition: 0.3s;
+cursor:pointer;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:70px;
+height:70px;
+background:#0b7a24;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:white;
+}
+
+.site-text h1{
+font-size:42px;
+color:#0d2344;
+}
+
+.site-text p{
+font-size:18px;
+margin-top:5px;
+color:#444;
+}
+
+/* NAVBAR */
+nav{
+background:linear-gradient(to right,#03285a,#0b3f91);
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+transition: 0.3s;
+}
+
+.menu{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+transition:0.3s;
+cursor:pointer;
+}
+
+.menu a:hover{
+color:#7cff8e;
+}
+
+.dark-btn{
+background:#111;
+color:white;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+transition: 0.3s;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:1400px;
+margin:auto;
+}
+
+/* AD BOX */
+.ad-box{
+margin:30px 0;
+padding:35px;
+border:2px dashed #59a86c;
+background:white;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+color:red;
+border-radius:10px;
+transition: 0.3s;
+}
+
+/* SECTION */
+.section{
+margin-top:40px;
+}
+
+.section-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+flex-wrap:wrap;
+}
+
+.section-title h2{
+font-size:38px;
+color:#0f2b4d;
+}
+
+.section-title a{
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+color:#0b7a24;
+}
+
+/* CARD GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+/* CARD */
+.card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.category{
+color: #2a5a8c;
+font-weight:bold;
+font-size:15px;
+margin-bottom:10px;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:10px;
+line-height:1.3;
+}
+
+.card p{
+font-size:16px;
+color:#555;
+line-height:1.6;
+margin-bottom:15px;
+transition: 0.3s;
+}
+
+.card a{
+display:inline-block;
+background:#0b7a24;
+color:white;
+padding:8px 15px;
+border-radius:25px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+.card a:hover{
+background:#0a661f;
+transform:scale(1.02);
+}
+
+.meta{
+display:flex;
+justify-content:space-between;
+font-size:13px;
+color:#777;
+margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+margin-top:70px;
+background:linear-gradient(to right,#02152d,#032d63);
+color:white;
+padding:60px 5% 30px;
+transition: 0.3s;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-box h3{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.footer-box p{
+line-height:1.8;
+color:#ddd;
+font-size:17px;
+}
+
+.footer-links a{
+display:block;
+color:#ddd;
+text-decoration:none;
+margin-bottom:10px;
+font-size:17px;
+cursor:pointer;
+}
+
+.footer-links a:hover{
+color:#7cff8e;
+}
+
+.newsletter input{
+width:100%;
+padding:14px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+}
+
+.newsletter button{
+margin-top:15px;
+width:100%;
+padding:14px;
+border:none;
+background:#0b7a24;
+color:white;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.copyright{
+margin-top:40px;
+border-top:1px solid rgba(255,255,255,0.2);
+padding-top:20px;
+text-align:center;
+font-size:16px;
+}
+
+/* পেজ সেকশন লুকানোর জন্য */
+.page-section {
+    display: none;
+}
+.page-section.active {
+    display: block;
+}
+.main-content {
+    display: block;
+}
+.main-content.hide {
+    display: none;
+}
+
+/* যোগাযোগ সেকশনের স্টাইল */
+.contact-section {
+    padding: 50px 20px;
+    background: #fff;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    max-width: 1200px;
+}
+.dark-mode .contact-section {
+    background: #1e1e2f;
+}
+.contact-section h2 {
+    font-size: 36px;
+    color: #0b7a24;
+    margin-bottom: 30px;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.contact-card {
+    background: #f9f9f9;
+    padding: 25px 20px;
+    border-radius: 20px;
+    width: 260px;
+    transition: 0.4s ease;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+.dark-mode .contact-card {
+    background: #2a2a3a;
+}
+.contact-card:hover {
+    transform: translateY(-8px);
+    background: #e6f7ec;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.dark-mode .contact-card:hover {
+    background: #0b7a24;
+    color: white;
+}
+.contact-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.contact-card h3 {
+    margin: 10px 0 8px;
+    font-size: 22px;
+}
+.contact-card p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #555;
+}
+.dark-mode .contact-card p,
+.dark-mode .contact-card h3 {
+    color: #f0f0f0;
+}
+.contact-card a {
+    transition: 0.3s;
+    text-decoration: none;
+}
+.contact-card a:hover {
+    color: #128C7E !important;
+}
+
+/* ফর্মের স্টাইল */
+.form-container {
+    margin-top: 50px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dark-mode .form-container {
+    background: #2a2a3a;
+}
+.form-container h3 {
+    color: #0b7a24;
+    margin-bottom: 20px;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+.dark-mode .form-container input,
+.dark-mode .form-container textarea {
+    background: #1e1e2f;
+    color: white;
+    border-color: #444;
+}
+.form-container button {
+    background: #0b7a24;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-container button:hover {
+    background: #0a661f;
+}
+
+/* হিরো সেকশন স্টাইল */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 30px 5%;
+    color: white;
+}
+.hero-content {
+    max-width: 800px;
+    padding: 40px;
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-primary {
+    background: #0b7a24;
+    color: white;
+}
+.btn-primary:hover {
+    background: #0a661f;
+    transform: scale(1.05);
+}
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.btn-outline:hover {
+    background: white;
+    color: #0b7a24;
+    transform: scale(1.05);
+}
+.dark-mode .hero {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=2070&auto=format&fit=crop');
+}
+
+/* স্ক্রল টু টপ বাটন স্টাইল */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #0b7a24;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+.scroll-top-btn:hover {
+    background: #0a661f;
+    transform: scale(1.1);
+}
+.dark-mode .scroll-top-btn {
+    background: #7cff8e;
+    color: #121212;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+}
+
+/* ডার্ক মোড স্টাইল */
+.dark-mode {
+    background: #121212 !important;
+    color: #f0f0f0 !important;
+}
+.dark-mode .topbar {
+    background: #1f3b2c !important;
+}
+.dark-mode header {
+    background: #1a1a2e !important;
+}
+.dark-mode nav {
+    background: #0a1a2f !important;
+}
+.dark-mode .card {
+    background: #1e1e2f !important;
+}
+.dark-mode .card p {
+    color: #ccc !important;
+}
+.dark-mode .ad-box {
+    background: #222 !important;
+    color: #ff8888 !important;
+    border-color: #ff5555 !important;
+}
+.dark-mode .section-title h2,
+.dark-mode .section-title a {
+    color: #7cff8e !important;
+}
+.dark-mode footer {
+    background: #0a0f1a !important;
+}
+.dark-mode .newsletter button {
+    background: #0b7a24 !important;
+}
+.dark-mode .dark-btn {
+    background: #f0f0f0 !important;
+    color: #111 !important;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.site-text h1{
+font-size:28px;
+}
+.site-text p{
+font-size:15px;
+}
+.menu{
+margin-top:15px;
+gap:15px;
+}
+.menu a{
+font-size:16px;
+}
+.section-title h2{
+font-size:28px;
+}
+.card h3{
+font-size:20px;
+}
+.card p{
+font-size:14px;
+}
+.ad-box{
+font-size:20px;
+padding:25px;
+}
+.contact-card {
+    width: 100%;
+    max-width: 280px;
+}
+.hero {
+    min-height: 400px;
+    margin: 20px 3%;
+}
+.hero-content h1 {
+    font-size: 32px;
+}
+.hero-content p {
+    font-size: 16px;
+}
+}
+
+/* ========== পেজ লোড অ্যানিমেশন ========== */
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.6s ease-out forwards;
+}
+.card:nth-child(1) { animation-delay: 0.05s; }
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.15s; }
+.card:nth-child(4) { animation-delay: 0.2s; }
+.card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.3s; }
+.card:nth-child(7) { animation-delay: 0.35s; }
+.card:nth-child(8) { animation-delay: 0.4s; }
+.card:nth-child(9) { animation-delay: 0.45s; }
+.card:nth-child(10) { animation-delay: 0.5s; }
+.card:nth-child(11) { animation-delay: 0.55s; }
+.card:nth-child(12) { animation-delay: 0.6s; }
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.hero {
+    animation: zoomIn 0.9s ease-out;
+}
+@keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+nav, header, .topbar {
+    animation: slideDown 0.5s ease-out;
+}
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== সোশ্যাল মিডিয়া আইকন ========== */
+.social-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+.social-section h3 {
+    font-size: 28px;
+    color: #0b7a24;
+    margin-bottom: 20px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #333;
+    font-size: 28px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons .facebook:hover {
+    background: #1877f2;
+    color: white;
+}
+.social-icons .youtube:hover {
+    background: #ff0000;
+    color: white;
+}
+.social-icons .whatsapp:hover {
+    background: #25D366;
+    color: white;
+}
+.dark-mode .social-icons a {
+    background: #2a2a3a;
+    color: #ddd;
+}
+
+/* হেডারের সোশ্যাল মিডিয়া আইকন */
+.header-social {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.header-social a {
+    color: #0b7a24;
+    background: #beb2b2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.header-social a:hover {
+    transform: translateY(-5px);
+    background: #141515;
+    color: rgb(4, 182, 173);
+}
+.header-social a.facebook,
+.header-social a.youtube {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+}
+.dark-mode .header-social a {
+    background: #2a373a;
+    color: #ddd;
+}
+.dark-mode .header-social a:hover {
+    background: #0b7a24;
+    color: white;
+}
+
+@media(max-width:768px){
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-social {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .header-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .header-social a.facebook,
+    .header-social a.youtube {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+    }
+}
+
+
+
+
+/* বিস্তারিত পড়ুন বাটন - রঙিন ও আকর্ষণীয় */
+.read-more-btn {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px 0 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.read-more-btn:hover {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ডার্ক মোডের জন্য */
+.dark-mode .read-more-btn {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: #f0f0f0;
+}
+
+.dark-mode .read-more-btn:hover {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+}
+
+
+/* সরাসরি মেসেজ করুন - রঙিন স্টাইল */
+.message-card {
+    background: linear-gradient(135deg, #0b7a24, #0a5f1a);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.message-card h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.message-card a {
+    display: inline-block;
+    background: white;
+    color: #0b7a24;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.message-card a:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ডার্ক মোডের জন্য */
+.dark-mode .message-card {
+    background: linear-gradient(135deg, #1e3a2f, #0f2b1f);
+}
+
+.dark-mode .message-card a {
+    background: #2a2a3a;
+    color: #7cff8e;
+}
+
+.dark-mode .message-card a:hover {
+    background: #3a3a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+    <div>
+        📅 <span id="date"></span> &nbsp; | &nbsp; 
+        🕒 <span id="liveClock"></span>
+    </div>
+    <div class="icons">
+        <span>📘</span>
+        <span>▶</span>
+        <span>📱</span>
+        <span>🔍</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header id="homeHeader">
+    <div class="logo-area">
+        <div class="logo">☪</div>
+        <div class="site-text">
+            <h1>Islamic & Tech Tips BD</h1>
+            <p style="color: #0b4ec7;"><b>"ইসলামিক জ্ঞান, দোয়া এবং আধুনিক টেক টিপস একসাথে"</b></p>
+        </div>
+    </div>
+    <div class="header-social">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/8801234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+<div class="menu">
+<a href="#" id="homeLink">হোম</a>
+<a href="#" id="islamicLink">ইসলামিক</a>
+<a href="#" id="techLink">টেক টিপস</a>
+
+<a href="#" id="aiLink">AI টুলস</a>
+<a href="#" id="contactLink">যোগাযোগ</a>
+<a href="#" id="aboutLink">About</a>
+</div>
+<div class="dark-btn">🌙 ডার্ক মোড</div>
+</nav>
+
+<!-- হিরো সেকশন -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>স্বাগতম ইসলামিক ও টেক টিপস বিডি</h1>
+        <p>ইসলামিক জ্ঞান, দোয়া এবং আধুনিক টেক টিপস — সব একসাথে একটি প্ল্যাটফর্মে</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-primary" id="exploreBtn">📖 Explore Now</a>
+            <a href="#" class="btn btn-outline" id="heroContactBtn">📞 যোগাযোগ করুন</a>
+        </div>
+    </div>
+</div>
+
+<!-- মূল কন্টেন্ট (হোমপেজ - শুধু টেক টিপস) -->
+<div id="mainContent" class="main-content">
+<div class="container">
+
+<div class="ad-box">এখানে আপনার Adsterra Banner Ad Code বসান</div>
+
+<!-- TECH SECTION (শুধু হোম ও টেক ট্যাবে দেখাবে) -->
+<div class="section" id="techSection">
+<div class="section-title">
+<h2 style="color:#0b4ec7;">💻 টেক টিপস</h2>
+<a href="#">সবগুলো দেখুন →</a>
+</div>
+<div class="grid">
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Mobile Speed Inc.png" alt="মোবাইল স্পিড টিপস">
+    </div>
+    <div class="card-content">
+        <div class="category" style="color:#0b4ec7;">📱 অ্যান্ড্রয়েড টিপস</div>
+        <h3>মোবাইলের স্পিড বাড়ানোর ১২টি কার্যকরী উপায়</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 সহজ কিছু সেটিংস পরিবর্তন করে আপনার ফোনকে আগের চেয়ে দ্রুত করুন।
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="androidSpeedDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="androidSpeedDetails" class="details-content" style="display: none; max-height: 220px; overflow-y: auto;">
+            
+            <p><strong>⚡ ফোনের স্পিড বাড়াতে নিচের টিপস ফলো করুন:</strong></p>
+            
+            <p><strong>১. অপ্রয়োজনীয় অ্যাপ আনইনস্টল করুন</strong> — যে সব অ্যাপ ব্যবহার করেন না, সেগুলো ডিলিট করে দিন।</p>
+            
+            <p><strong>২. ফোনের ক্যাশে (Cache) নিয়মিত ক্লিয়ার করুন</strong> — সেটিংস > স্টোরেজ > ক্যাশে ডাটা ক্লিয়ার করুন।</p>
+            
+            <p><strong>৩. সব অ্যাপ ও সফটওয়্যার আপডেট রাখুন</strong> — পুরনো ভার্সনে স্পিড সমস্যা হতে পারে।</p>
+            
+            <p><strong>৪. ফোনের স্টোরেজ খালি রাখুন</strong> — অন্তত ১৫-২০% স্টোরেজ ফাঁকা রাখুন।</p>
+            
+            <p><strong>৫. ব্যাকগ্রাউন্ডে চলা অ্যাপ বন্ধ করুন</strong> — অপ্রয়োজনীয় অ্যাপ RAM খেয়ে ফোন স্লো করে।</p>
+            
+            <p><strong>৬. অটো-ডাউনলোড ও অটো-সিঙ্ক বন্ধ করুন</strong> — WhatsApp, Google Photos এ সেটিংস পরিবর্তন করুন।</p>
+            
+            <p><strong>৭. হালকা (Lite) ভার্সনের অ্যাপ ব্যবহার করুন</strong> — Facebook Lite, Messenger Lite, YouTube Go।</p>
+            
+            <p><strong>৮. অ্যানিমেশন ও লাইভ ওয়ালপেপার কম ব্যবহার করুন</strong> — ডেভেলপার অপশন থেকে অ্যানিমেশন স্পিড ০.৫x করুন।</p>
+            
+            <p><strong>৯. ভালো অ্যান্টিভাইরাস দিয়ে স্ক্যান করুন</strong> — Kaspersky, Bitdefender বা Malwarebytes ব্যবহার করুন।</p>
+            
+            <p><strong>১০. ফোন নিয়মিত রিস্টার্ট দিন</strong> — সপ্তাহে একবার রিস্টার্ট দিলে RAM রিফ্রেশ হয়।</p>
+            
+            <p><strong>১১. অপ্রয়োজনীয় ফাইল ও ডুপ্লিকেট ছবি মুছে ফেলুন</strong> — Google Files বা CCleaner ব্যবহার করুন।</p>
+            
+            <p><strong>১২. প্রয়োজন হলে Factory Reset করুন</strong> — ডাটা ব্যাকআপ নিয়ে ফোন রিসেট করুন (শেষ উপায়)।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৭ মে, ২০২৬</span>
+            <span>⏱ ৬ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Mobile hacking.png" alt="মোবাইল সিকিউরিটি">
+    </div>
+    <div class="card-content">
+        <div class="category" style="color:#0b4ec7;">🛡️ সাইবার সিকিউরিটি</div>
+        <h3>মোবাইল হ্যাকিং থেকে বাঁচার ২১টি কার্যকরী উপায়</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 নিচের টিপসগুলো ফলো করে আপনার ফোন ও ব্যক্তিগত তথ্য সুরক্ষিত রাখুন।
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="securityTipsDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="securityTipsDetails" class="details-content" style="display: none; max-height: 250px; overflow-y: auto;">
+            
+            <p><strong>🛡️ মোবাইল হ্যাকিং থেকে বাঁচতে যা করবেন:</strong></p>
+            
+            <p><strong>১. শক্তিশালী ও ইউনিক পাসওয়ার্ড ব্যবহার করুন</strong> — সহজ পাসওয়ার্ড যেমন 123456, password ব্যবহার করবেন না।</p>
+            
+            <p><strong>২. সব গুরুত্বপূর্ণ অ্যাকাউন্টে Two-Factor Authentication (2FA) চালু রাখুন</strong> — Google Authenticator বা SMS কোড যুক্ত করুন।</p>
+            
+            <p><strong>৩. অচেনা লিংক, SMS বা Email-এ ক্লিক করা থেকে বিরত থাকুন</strong> — ফিশিং আক্রমণ থেকে বাঁচতে।</p>
+            
+            <p><strong>৪. শুধুমাত্র অফিসিয়াল App Store বা Play Store থেকে অ্যাপ ডাউনলোড করুন</strong> — থার্ড পার্টি সোর্স এড়িয়ে চলুন।</p>
+            
+            <p><strong>৫. ফোনের Software ও Security Update নিয়মিত করুন</strong> — পুরনো সফটওয়্যারে সিকিউরিটি হোল থাকে।</p>
+            
+            <p><strong>৬. Public Wi-Fi ব্যবহারে সতর্ক থাকুন এবং প্রয়োজনে VPN ব্যবহার করুন</strong> — পাবলিক নেটওয়ার্কে ব্যাংকিং করবেন না।</p>
+            
+            <p><strong>৭. অপ্রয়োজনীয় App Permission বন্ধ রাখুন</strong> — কোন অ্যাপ কেন মাইক্রোফোন, লোকেশন একসেস করছে চেক করুন।</p>
+            
+            <p><strong>৮. Screen Lock হিসেবে Fingerprint, Face Lock বা PIN ব্যবহার করুন</strong> — প্যাটার্নের চেয়ে নিরাপদ।</p>
+            
+            <p><strong>৯. সন্দেহজনক অ্যাপ বা ফাইল ইনস্টল করবেন না</strong> — অনুমতিহীন সোর্স থেকে ডাউনলোড বন্ধ রাখুন।</p>
+            
+            <p><strong>১০. Bluetooth, NFC ও Hotspot ব্যবহার শেষে বন্ধ রাখুন</strong> — অপ্রয়োজনীয় সংযোগ হ্যাকিং রিস্ক বাড়ায়।</p>
+            
+            <p><strong>১১. গুরুত্বপূর্ণ ডাটার নিয়মিত Backup রাখুন</strong> — Google Drive বা ক্লাউডে ব্যাকআপ নিন।</p>
+            
+            <p><strong>১২. ফোন Root বা Jailbreak করা থেকে বিরত থাকুন</strong> — রুট করা ফোন বেশি ঝুঁকিপূর্ণ।</p>
+            
+            <p><strong>১৩. Security Alert বা Login Notification সবসময় চালু রাখুন</strong> — সন্দেহজনক লগইন হলে সতর্কতা পাবেন।</p>
+            
+            <p><strong>১৪. AI Scam, Voice Clone ও Deepfake প্রতারণা সম্পর্কে সচেতন থাকুন</strong> — অচেনা কল এড়িয়ে চলুন।</p>
+            
+            <p><strong>১৫. ব্যক্তিগত তথ্য (OTP, Password, Bank Info) কাউকে শেয়ার করবেন না</strong> — কোনো প্রতিষ্ঠান OTP চায় না।</p>
+            
+            <p><strong>১৬. ফোন হারিয়ে গেলে দ্রুত "Find My Device" বা Remote Lock ব্যবহার করুন</strong> — ডাটা ডিলিট বা রিমোট লক করুন।</p>
+            
+            <p><strong>১৭. নিরাপদ ও বিশ্বস্ত Antivirus/Security App ব্যবহার করুন</strong> — Kaspersky, Bitdefender, Malwarebytes।</p>
+            
+            <p><strong>১৮. Browser-এ Saved Password কম রাখুন এবং Password Manager ব্যবহার করুন</strong> — গুগল বা ফায়ারফক্সের পাসওয়ার্ড ম্যানেজার ব্যবহার করুন।</p>
+            
+            <p><strong>১৯. USB Debugging ও Unknown Sources অপশন প্রয়োজন ছাড়া বন্ধ রাখুন</strong> — ডেভেলপার অপশন থেকে বন্ধ রাখুন।</p>
+            
+            <p><strong>২০. ডিজিটাল নিরাপত্তা সম্পর্কে নিয়মিত নতুন তথ্য জানুন ও সচেতন থাকুন</strong> — সিকিউরিটি ব্লগ ফলো করুন।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৬ মে, ২০২৬</span>
+            <span>⏱ ৮ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Internet speed.png" alt="ইন্টারনেট স্পিড টিপস">
+    </div>
+    <div class="card-content">
+        <div class="category" style="color:#0b4ec7;">🌐 ইন্টারনেট টিপস</div>
+        <h3>ইন্টারনেট স্পিড বাড়ানোর ১0টি কার্যকরী উপায়</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 সহজ কিছু উপায়ে আপনার ইন্টারনেট স্পিড হবে আগের চেয়ে অনেক বেশি।
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="internetSpeedTipsDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="internetSpeedTipsDetails" class="details-content" style="display: none; max-height: 250px; overflow-y: auto;">
+            
+            <p><strong>⚡ ইন্টারনেট স্পিড বাড়াতে নিচের টিপস ফলো করুন:</strong></p>
+            
+            <p><strong>১. রাউটার খোলা ও উঁচু স্থানে রাখুন</strong> — রাউটার খোলা জায়গায় ও উঁচুতে রাখলে সিগন্যাল ভালো পাওয়া যায়।</p>
+            
+            <p><strong>২. Wi-Fi Router নিয়মিত Restart করুন</strong> — সপ্তাহে একবার রাউটার রিস্টার্ট দিলে ক্যাশ ক্লিয়ার হয় ও স্পিড বাড়ে।</p>
+            
+            <p><strong>৩. পুরোনো Router বদলে আধুনিক Dual Band / Wi-Fi 6 Router ব্যবহার করুন</strong> — পুরনো রাউটার (WiFi 4) থেকে WiFi 6 অনেক দ্রুত।</p>
+            
+            <p><strong>৪. অপ্রয়োজনীয় Device Wi-Fi থেকে Disconnect করুন</strong> — অনেক ডিভাইস একসাথে কানেক্ট থাকলে ব্যান্ডউইথ ভাগ হয়ে যায়।</p>
+            
+            <p><strong>৫. Router-এর Firmware ও মোবাইল/পিসির Software Update রাখুন</strong> — আপডেটে স্পিড ও নিরাপত্তার উন্নতি আসে।</p>
+            
+            <p><strong>৬. সম্ভব হলে 5GHz Network ব্যবহার করুন</strong> — 5GHz ব্যান্ড 2.4GHz থেকে দ্রুত, তবে দূরত্ব কম থাকতে হবে।</p>
+            
+            <p><strong>৭. Background Download ও Auto Update সীমিত করুন</strong> — অটো আপডেট চললে ইন্টারনেট স্পিড কমে যায়।</p>
+            
+            <p><strong>৮. DNS Server পরিবর্তন করে Fast DNS ব্যবহার করুন</strong> — Google DNS (8.8.8.8, 8.8.4.4) বা Cloudflare (1.1.1.1) ব্যবহার করুন।</p>
+            
+            <p><strong>৯. নেটওয়ার্কে শক্তিশালী Password ব্যবহার করুন</strong> — অন্যেরা Wi-Fi ব্যবহার করলে স্পিড কমে যেতে পারে।</p>
+            
+            <p><strong>১০. ভালো Internet Package ও বিশ্বস্ত ISP নির্বাচন করুন</strong> — ISP সঠিক স্পিড দিচ্ছে কিনা নিয়মিত টেস্ট করুন (Speedtest.net)।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৫ মে, ২০২৬</span>
+            <span>⏱ ৭ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="ad-box">এখানে আপনার Adsterra Native Ad Code বসান</div>
+
+<!-- ISLAMIC SECTION (শুধু ইসলামিক ট্যাবে দেখাবে) -->
+<div class="section" id="islamicSection" style="display: none;">
+<div class="section-title">
+<h2>🕌 ইসলামিক পোস্ট</h2>
+<a href="#">সবগুলো দেখুন →</a>
+</div>
+<div class="grid">
+
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Sokaler Dua.png" alt="সকালের দোয়া">
+    </div>
+    <div class="card-content">
+        <div class="category">🌸 দোয়া ও আমল</div>
+        <h3>সকালের দোয়া ও গুরুত্বপূর্ণ আমল</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 ভোরবেলা ঘুম থেকে উঠে আল্লাহর নাম স্মরণ করে দিন শুরু করা খুবই সুন্নত। সকালে দোয়া পড়লে বরকত লাভ হয়।
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="morningDuaDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="morningDuaDetails" class="details-content" style="display: none; max-height: 300px; overflow-y: auto;">
+            
+            <p><strong>🌅 সকালের দোয়া ও গুরুত্বপূর্ণ আমল:</strong></p>
+            
+            <p><strong>১. ঘুম থেকে উঠে আল্লাহর শুকরিয়া আদায়</strong><br>
+            <strong>আরবি:</strong> اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ<br>
+            <strong>বাংলা উচ্চারণ:</strong> আলহামদুলিল্লাহিল্লাযী আহইয়ানা বা’দা মা আমাতানা ওয়া ইলাইহিন নুশূর।<br>
+            <strong>অর্থ:</strong> সব প্রশংসা আল্লাহর জন্য, যিনি মৃত্যুর ন্যায় ঘুমের পর আমাদের পুনরায় জীবিত করেছেন এবং তাঁর কাছেই ফিরে যেতে হবে।</p>
+            
+            <p><strong>২. ফজরের নামাজ আদায় করা</strong><br>
+            দিনের সবচেয়ে বরকতময় আমল। ফজরের নামাজ মানুষকে অলসতা ও গাফেলতি থেকে দূরে রাখে। নিয়মিত ফজর আদায় করলে আল্লাহর বিশেষ হেফাজত পাওয়া যায়।</p>
+            
+            <p><strong>৩. সকালে তাসবিহ ও যিকির করা</strong><br>
+            <strong>গুরুত্বপূর্ণ যিকির:</strong> سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ<br>
+            <strong>বাংলা উচ্চারণ:</strong> সুবহানাল্লাহি ওয়া বিহামদিহি।<br>
+            <strong>ফজিলত:</strong> প্রতিদিন ১০০ বার পড়লে গুনাহ মাফ হয় এবং অন্তরে প্রশান্তি আসে।</p>
+            
+            <p><strong>৪. আয়াতুল কুরসি ও তিন কুল পড়া</strong><br>
+            সূরা ইখলাস, সূরা ফালাক ও সূরা নাস সকাল-সন্ধ্যায় পড়া খুবই গুরুত্বপূর্ণ। এগুলো মানুষকে শয়তান, বদনজর ও বিভিন্ন অনিষ্ট থেকে রক্ষা করে।</p>
+            
+            <p><strong>৫. সকালবেলার বিশেষ দোয়া</strong><br>
+            <strong>আরবি:</strong> اَللّٰهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ<br>
+            <strong>বাংলা উচ্চারণ:</strong> আল্লাহুম্মা বিকা আসবাহনা ওয়া বিকা আমসাইনা ওয়া বিকা নাহইয়া ওয়া বিকা নামুতু ওয়া ইলাইকাশ নুশূর।<br>
+            <strong>অর্থ:</strong> হে আল্লাহ! আপনারই অনুগ্রহে আমরা সকাল করেছি, আপনারই অনুগ্রহে সন্ধ্যা করি, আপনারই অনুগ্রহে বাঁচি ও মারা যাই এবং আপনার কাছেই পুনরুত্থান।</p>
+            
+            <p><strong>৬. কুরআন তিলাওয়াত করা</strong><br>
+            সকালবেলা কুরআন পড়লে মন শান্ত হয়। দিনের কাজে বরকত আসে। অন্তরে নূর ও তাকওয়া বৃদ্ধি পায়।</p>
+            
+            <p><strong>৭. দিনের কাজ শুরু করার আগে দোয়া</strong><br>
+            <strong>আরবি:</strong> بِسْمِ اللّٰهِ تَوَكَّلْتُ عَلَى اللّٰهِ<br>
+            <strong>বাংলা উচ্চারণ:</strong> বিসমিল্লাহি তাওয়াক্কালতু আলাল্লাহ।<br>
+            <strong>অর্থ:</strong> আল্লাহর নামে শুরু করছি, আমি আল্লাহর উপর ভরসা করলাম।</p>
+            
+            <p><strong>৮. সকালবেলা অলসতা ত্যাগ করা</strong><br>
+            ইসলামে সকালকে রিজিক ও বরকতের সময় বলা হয়েছে। খুব দেরি করে ঘুমানো ও ফজরের পর অলসভাবে সময় নষ্ট করা নিরুৎসাহিত করা হয়েছে।</p>
+            
+            <p><strong>৯. পিতা-মাতার জন্য দোয়া করা</strong><br>
+            <strong>আরবি:</strong> رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا<br>
+            <strong>বাংলা উচ্চারণ:</strong> রব্বির হামহুমা কামা রাব্বাইয়ানি সাগীরা।<br>
+            <strong>অর্থ:</strong> হে আমার রব! তাদের প্রতি দয়া করুন, যেমন তারা শৈশবে আমাকে লালন-পালন করেছেন।</p>
+            
+            <p><strong>১০. সারাদিন ভালো কাজের নিয়ত করা</strong><br>
+            সকালে ভালো নিয়ত করলে পুরো দিনটি ইবাদত ও কল্যাণময় হতে পারে। মানুষের উপকার, সত্য কথা বলা ও হারাম থেকে বাঁচার নিয়ত করা উত্তম আমল।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৭ মে, ২০২৫</span>
+            <span>⏱ ১০ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Rater Dua.png" alt="রাতের দোয়া">
+    </div>
+    <div class="card-content">
+        <div class="category">🌙 হাদিস ও দোয়া</div>
+        <h3>রাতের দোয়া ও ফজিলত</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 রাতে ঘুমানোর আগে ও পরে যে দোয়াগুলো পড়া খুবই গুরুত্বপূর্ণ। রাতের দোয়া পড়লে শয়তান থেকে সুরক্ষা মেলে।
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="nightDuaDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="nightDuaDetails" class="details-content" style="display: none; max-height: 250px; overflow-y: auto;">
+            
+            <p><strong>🌙 রাতের দোয়া ও ফজিলত সম্পর্কে গুরুত্বপূর্ণ তথ্য:</strong></p>
+            
+            <p><strong>১.</strong> রাতে ঘুমানোর আগে দোয়া পড়লে আল্লাহর বিশেষ হেফাজত পাওয়া যায় এবং শয়তানের ক্ষতি থেকে রক্ষা মেলে।</p>
+            
+            <p><strong>২.</strong> আয়াতুল কুরসি পড়ে ঘুমালে সারা রাত একজন ফেরেশতা পাহারা দেয়।</p>
+            
+            <p><strong>৩.</strong> ঘুমানোর আগে "বিসমিকা আল্লাহুম্মা আমূতু ওয়া আহইয়া" পড়া সুন্নত, এতে ঘুম ইবাদতের রূপ নেয়।</p>
+            
+            <p><strong>৪.</strong> রাতে দোয়া করলে মানসিক শান্তি ও হৃদয়ের প্রশান্তি বৃদ্ধি পায়।</p>
+            
+            <p><strong>৫.</strong> তাহাজ্জুদ নামাজে দোয়া করলে তা কবুল হওয়ার সম্ভাবনা বেশি থাকে।</p>
+            
+            <p><strong>৬.</strong> রাতে ক্ষমা প্রার্থনা (ইস্তেগফার) করলে গুনাহ মাফের সুযোগ বাড়ে।</p>
+            
+            <p><strong>৭.</strong> রাতে আল্লাহর স্মরণ করলে রিজিক ও বরকত বৃদ্ধি পায়।</p>
+            
+            <p><strong>৮.</strong> ঘুমের আগে দোয়া পড়লে খারাপ স্বপ্ন ও ভয় থেকে সুরক্ষা পাওয়া যায়।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৬ মে, ২০২৫</span>
+            <span>⏱ ৫ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Sura yasin.png" alt="সূরা ইয়াসিন">
+    </div>
+    <div class="card-content">
+        <div class="category">📖 কুরআনের শিক্ষা</div>
+        <h3>সূরা ইয়াসিনের ফজিলত</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 সূরা ইয়াসিন কুরআনের হৃদয়। রাতে পড়লে গুনাহ মাফ হয়, নিয়মিত পড়লে বরকত লাভ হয়।
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="surahYasinDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="surahYasinDetails" class="details-content" style="display: none; max-height: 250px; overflow-y: auto;">
+            
+            <p><strong>📖 সূরা ইয়াসিনের ফজিলত সম্পর্কে গুরুত্বপূর্ণ তথ্য:</strong></p>
+            
+            <p><strong>১.</strong> সূরা ইয়াসিনকে কুরআনের "কলব" বা হৃদয় বলা হয়, যা এর বিশেষ মর্যাদা নির্দেশ করে।</p>
+            
+            <p><strong>২.</strong> এটি তেলাওয়াত করলে আল্লাহর রহমত ও বরকত নাজিল হয়।</p>
+            
+            <p><strong>৩.</strong> মৃত্যুপথযাত্রী ব্যক্তির পাশে সূরা ইয়াসিন পড়া সুন্নত, এতে মৃত্যুর কষ্ট সহজ হয়।</p>
+            
+            <p><strong>৪.</strong> রাতে বা সকালে পড়লে মানসিক শান্তি ও আত্মিক প্রশান্তি পাওয়া যায়।</p>
+            
+            <p><strong>৫.</strong> নিয়মিত সূরা ইয়াসিন পড়লে গুনাহ মাফের আশা করা হয় (আল্লাহর রহমতের মাধ্যমে)।</p>
+            
+            <p><strong>৬.</strong> এটি দোয়া কবুলের সময় আল্লাহর কাছে নিকটতা বাড়ায়।</p>
+            
+            <p><strong>৭.</strong> বিপদ-আপদ ও কঠিন পরিস্থিতিতে সূরা ইয়াসিন তেলাওয়াত করলে সাহায্য ও সহজতা আসে।</p>
+            
+            <p><strong>৮.</strong> কুরআন তেলাওয়াতের মধ্যে এটি একটি অত্যন্ত ফজিলতপূর্ণ সূরা হিসেবে বিবেচিত।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৫ মে, ২০২৫</span>
+            <span>⏱ ৬ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-image-area">
+        <img src="img/Nobijir Jiboni.png" alt="নবীজীর জীবনী">
+    </div>
+    <div class="card-content">
+        <div class="category">📜 ইসলামের ইতিহাস</div>
+        <h3>নবীজীর জীবনী থেকে শিক্ষা</h3>
+        
+        <!-- ছোট সারাংশ (কার্ড লম্বা হবে না) -->
+        <p class="short-text">
+            📌 নবীজীর চরিত্র ও আদর্শ আমাদের জন্য অনুকরণীয়। তাঁর জীবন থেকে আমরা শিখতে পারি—
+        </p>
+        
+        <!-- বিস্তারিত পড়ুন বাটন -->
+        <button class="read-more-btn" data-target="prophetLifeDetails">📖 বিস্তারিত পড়ুন</button>
+        
+        <!-- বিস্তারিত লেখা (স্ক্রলযোগ্য বক্স - লুকানো) -->
+        <div id="prophetLifeDetails" class="details-content" style="display: none; max-height: 280px; overflow-y: auto;">
+            
+            <p><strong>📖 নবীজী (সা.)-এর জীবনী থেকে বাস্তব জীবনে চলার জন্য গুরুত্বপূর্ণ শিক্ষা:</strong></p>
+            
+            <p><strong>🤲 ১. আল্লাহর প্রতি পূর্ণ বিশ্বাস (তাওয়াক্কুল)</strong><br>সব অবস্থায় আল্লাহর উপর ভরসা রাখা এবং তাঁর সাহায্য চাওয়া।</p>
+            
+            <p><strong>🕊️ ২. সৎ ও সত্যবাদিতা</strong><br>নবীজী (সা.) সবসময় সত্য কথা বলতেন — জীবনের প্রতিটি ক্ষেত্রে সততা বজায় রাখা জরুরি।</p>
+            
+            <p><strong>💫 ৩. ধৈর্য ও সহনশীলতা</strong><br>কঠিন পরিস্থিতিতেও ধৈর্য ধরে এগিয়ে যাওয়া — এটাই সফলতার চাবিকাঠি।</p>
+            
+            <p><strong>🤝 ৪. মানবতার সেবা</strong><br>গরিব, অসহায় ও দুর্বল মানুষের পাশে দাঁড়ানো নবীজীর অন্যতম শিক্ষা।</p>
+            
+            <p><strong>❤️ ৫. ক্ষমাশীলতা</strong><br>শত্রুর প্রতি প্রতিশোধ না নিয়ে ক্ষমা করা — এটি উচ্চ নৈতিকতার পরিচয়।</p>
+            
+            <p><strong>🕌 ৬. ইবাদত ও নিয়মিত নামাজ</strong><br>আল্লাহর সাথে সম্পর্ক দৃঢ় রাখতে নিয়মিত ইবাদত করা।</p>
+            
+            <p><strong>📖 ৭. জ্ঞান ও শিক্ষা অর্জন</strong><br>জ্ঞান অর্জনকে ইসলামে অত্যন্ত গুরুত্ব দেওয়া হয়েছে।</p>
+            
+            <p><strong>🌿 ৮. সুন্দর চরিত্র (আখলাক)</strong><br>বিনয়, নম্রতা ও ভালো আচরণ বজায় রাখা।</p>
+            
+            <p><strong>⚖️ ৯. ন্যায়বিচার</strong><br>সব ক্ষেত্রে ইনসাফ ও ন্যায়ের পথে থাকা।</p>
+            
+            <p><strong>🤍 ১০. পরিবার ও সমাজের প্রতি দায়িত্ব</strong><br>পরিবার, প্রতিবেশী ও সমাজের প্রতি দায়িত্বশীল হওয়া।</p>
+            
+        </div>
+        
+        <div class="meta">
+            <span>📅 ১৪ মে, ২০২৫</span>
+            <span>⏱ ৭ মিনিট পড়া</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- AI টুলস সেকশন (লুকানো) -->
+<!-- AI টুলস সেকশন (লুকানো) -->
+<div id="aiSection" class="page-section">
+    <div class="container">
+        <div class="section">
+            <div class="section-title">
+                <h2 style="color:#8e44ad;">🤖 AI টুলস</h2>
+                <a href="#">সবগুলো দেখুন →</a>
+            </div>
+            <div class="grid">
+                
+                <!-- কার্ড ১: ChatGPT -->
+                <div class="card">
+                    <img src="img/chatgpt.png">
+                    <div class="card-content">
+                        <div class="category">💬 চ্যাট AI</div>
+                        <h3>ChatGPT</h3>
+                        <p>ওপেনএআই-এর জনপ্রিয় চ্যাটবট। লেখা, কোড, অনুবাদ, আইডিয়া জেনারেট - সবকিছু করতে পারে।</p>
+                        <a href="https://chat.openai.com" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি + পেইড</span><span>⭐ ৪.৯</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ২: Google Gemini -->
+                <div class="card">
+                    <img src="img/Gemini Ai.png">
+                    <div class="card-content">
+                        <div class="category">💬 চ্যাট AI</div>
+                        <h3>Google Gemini</h3>
+                        <p>গুগলের অত্যাধুনিক AI মডেল। রিসার্চ, ডেটা এনালাইসিস, কন্টেন্ট তৈরি - দারুণ কাজ করে।</p>
+                        <a href="https://gemini.google.com" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি</span><span>⭐ ৪.৮</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৩: DeepSeek -->
+                <div class="card">
+                    <img src="img/deepseekAi.png">
+                    <div class="card-content">
+                        <div class="category">💬 চ্যাট AI</div>
+                        <h3>DeepSeek</h3>
+                        <p>আমি নিজেই! চাইনিজ AI, দারুণ কোডিং ক্ষমতা, লম্বা কন্টেক্সট, ফ্রি ও ফাস্ট।</p>
+                        <a href="https://deepseek.com" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 সম্পূর্ণ ফ্রি</span><span>⭐ ৪.৯</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৪: Microsoft Copilot -->
+                <div class="card">
+                    <img src="img/Mirosoft copilot.png">
+                    <div class="card-content">
+                        <div class="category">💬 চ্যাট AI</div>
+                        <h3>Microsoft Copilot</h3>
+                        <p>মাইক্রোসফটের AI। GPT-4 ব্যবহার করে, ফ্রিতে ইমেজ জেনারেট করে। অফিসের কাজে দুর্দান্ত।</p>
+                        <a href="https://copilot.microsoft.com" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি</span><span>⭐ ৪.৭</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৫: Perplexity AI -->
+                <div class="card">
+                    <img src="img/perplexity Ai.png">
+                    <div class="card-content">
+                        <div class="category">🔍 রিসার্চ AI</div>
+                        <h3>Perplexity AI</h3>
+                        <p>রিসার্চ ও তথ্য সংগ্রহের জন্য সেরা AI। সোর্স সহ উত্তর দেয়, রিয়েল টাইম তথ্য খুঁজে আনে।</p>
+                        <a href="https://perplexity.ai" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি + প্রো</span><span>⭐ ৪.৮</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৬: Claude AI -->
+                <div class="card">
+                    <img src="img/cloud ai.png">
+                    <div class="card-content">
+                        <div class="category">💬 চ্যাট AI</div>
+                        <h3>Claude AI</h3>
+                        <p>Anthropic-এর AI। লম্বা লেখা, প্রোগ্রামিং, কনটেন্ট তৈরি - খুব ভালো করতে পারে।</p>
+                        <a href="https://claude.ai" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি + প্রো</span><span>⭐ ৪.৮</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৭: Midjourney -->
+                <div class="card">
+                    <img src="img/Midjourney.png">
+                    <div class="card-content">
+                        <div class="category">🎨 ইমেজ জেনারেটর</div>
+                        <h3>Midjourney</h3>
+                        <p>আর্ট ও ইমেজ তৈরির জন্য বিশ্বের সেরা টুল। Discord ব্যবহার করে চমৎকার ইমেজ বানায়।</p>
+                        <a href="https://midjourney.com" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 পেইড</span><span>⭐ ৪.৯</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৮: DALL-E 3 -->
+                <div class="card">
+                    <img src="img/dall e3.png">
+                    <div class="card-content">
+                        <div class="category">🎨 ইমেজ জেনারেটর</div>
+                        <h3>DALL-E 3</h3>
+                        <p>OpenAI-এর ইমেজ জেনারেটর। ChatGPT-এর ভিতরেও ব্যবহার করা যায়। খুব রিয়ালিস্টিক ইমেজ বানায়।</p>
+                        <a href="https://openai.com/dall-e" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 পেইড</span><span>⭐ ৪.৯</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ৯: Leonardo AI -->
+                <div class="card">
+                    <img src="img/Leaonardo ai.png">
+                    <div class="card-content">
+                        <div class="category">🎨 ইমেজ জেনারেটর</div>
+                        <h3>Leonardo AI</h3>
+                        <p>ফ্রি ইমেজ জেনারেটর। প্রতিদিন ১৫০টি পর্যন্ত ফ্রি ইমেজ বানানো যায়। গেম ডিজাইনের জন্য ভালো।</p>
+                        <a href="https://leonardo.ai" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি + পেইড</span><span>⭐ ৪.৭</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ১০: ElevenLabs -->
+                <div class="card">
+                    <img src="img/Eleven labs.png">
+                    <div class="card-content">
+                        <div class="category">🎤 ভয়েস AI</div>
+                        <h3>ElevenLabs</h3>
+                        <p>রিয়ালিস্টিক ভয়েস জেনারেটর। ইউটিউব ভিডিও, অডিওবুক, ভয়েসওভার তৈরির জন্য সেরা।</p>
+                        <a href="https://elevenlabs.io" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি + পেইড</span><span>⭐ ৪.৮</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ১১: GitHub Copilot -->
+                <div class="card">
+                    <img src="img/Github copilot.png">
+                    <div class="card-content">
+                        <div class="category">💻 কোডিং AI</div>
+                        <h3>GitHub Copilot</h3>
+                        <p>কোডিং এর জন্য সেরা AI টুল। VS Code-এ বসে কোড写完 সাহায্য করে। প্রোগ্রামারদের জন্য অসাধারণ।</p>
+                        <a href="https://github.com/features/copilot" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 পেইড</span><span>⭐ ৪.৯</span></div>
+                    </div>
+                </div>
+
+                <!-- কার্ড ১২: Canva AI -->
+                <div class="card">
+                    <img src="img/canva ai.png">
+                    <div class="card-content">
+                        <div class="category">🎨 ডিজাইন AI</div>
+                        <h3>Canva AI</h3>
+                        <p>ডিজাইন, থাম্বনেইল, লোগো, প্রেজেন্টেশন তৈরি। AI দিয়ে ইমেজ জেনারেট ও লেখা তৈরি করতে পারে।</p>
+                        <a href="https://canva.com" target="_blank">🔗 ভিজিট করুন →</a>
+                        <div class="meta"><span>📅 ফ্রি + প্রো</span><span>⭐ ৪.৮</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Us সেকশন (লুকানো) -->
+<div id="aboutSection" class="page-section">
+    <div class="contact-section" style="margin-top: 20px;">
+        <h2>📖 About Us</h2>
+        <div style="text-align: center; max-width: 800px; margin: auto; padding: 20px;">
+            <p style="font-size: 20px; line-height: 1.8;">Islamic & Tech Tips BD একটি অনলাইন প্ল্যাটফর্ম যেখানে আপনি ইসলামিক জ্ঞান, দোয়া এবং আধুনিক টেক টিপস একসাথে পাবেন।</p>
+            <p style="font-size: 18px; margin-top: 20px;">আমাদের লক্ষ্য হল — একটি জায়গায় ইসলামিক শিক্ষা ও টেকনোলজির প্রয়োজনীয় টিপস সহজ বাংলায় পৌঁছে দেওয়া।</p>
+        </div>
+    </div>
+</div>
+
+<!-- যোগাযোগ সেকশন (লুকানো) -->
+<div id="contactSection" class="page-section">
+    <div class="contact-section">
+        <h2>📞 যোগাযোগ করুন</h2>
+        <div class="contact-info">
+            <div class="contact-card"><div class="icon">📞</div><h3>ফোন</h3><p>+880 1234 567890</p></div>
+            <div class="contact-card"><div class="icon">✉️</div><h3>ইমেইল</h3><p>info@islamictechtips.com</p></div>
+            <div class="contact-card"><div class="icon">📍</div><h3>ঠিকানা</h3><p>ঢাকা, বাংলাদেশ</p></div>
+            <div class="contact-card"><div class="icon">📱</div><h3>WhatsApp</h3><p><a href="https://wa.me/8801234567890" target="_blank">📲 01234-567890</a></p></div>
+        </div>
+
+
+   <!-- সরাসরি মেসেজ করুন - রঙিন কার্ড -->
+<div class="message-card">
+
+    <h3>📝 সরাসরি মেসেজ করুন</h3>
+    <a href="mailto:info@islamictechtips.com">📧 ইমেইল করুন</a>
+
+</div>
+
+
+        <div class="social-section">
+            <h3>আমাদের সাথে থাকুন</h3>
+            <div class="social-icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div style="margin-top: 40px; border-radius: 15px; overflow: hidden;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902!2d90.3915!3d23.7779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c8f4c8f4c8f4%3A0x8f4c8f4c8f4c8f4!2sDhaka!5e0!3m2!1sen!2sbd!4v1234567890" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-grid">
+<div class="footer-box"><h3>About Us</h3><p>Islamic & Tech Tips BD একটি অনলাইন প্ল্যাটফর্ম যেখানে আপনি ইসলামিক জ্ঞান, দোয়া এবং আধুনিক টেক টিপস একসাথে পাবেন।</p></div>
+<div class="footer-box"><h3>দ্রুত লিংক</h3><div class="footer-links"><a href="#" id="footerHomeLink">হোম</a><a href="#" id="footerIslamicLink">ইসলামিক</a><a href="#" id="footerTechLink">টেক টিপস</a><a href="#" id="footerAILink">AI টুলস</a><a href="#" id="footerContactLink">যোগাযোগ</a><a href="#" id="footerAboutLink">About</a></div></div>
+<div class="footer-box"><h3>জনপ্রিয় পোস্ট</h3><div class="footer-links"><a href="#">সকালের দোয়া</a><a href="#">মোবাইলের স্পিড</a><a href="#">ইউটিউব থেকে ইনকাম</a></div></div>
+<div class="footer-box newsletter"><h3>নিউজলেটার</h3><p>নতুন পোস্ট পেতে ইমেইল দিন।</p><input type="email" placeholder="আপনার ইমেইল"><button>সাবস্ক্রাইব</button></div>
+</div>
+<div class="copyright">© 2025 Islamic & Tech Tips BD. All Rights Reserved.</div>
+</footer>
+
+<!-- স্ক্রল টু টপ বাটন -->
+<button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+<script>
+
+window.onload = function () {
+    const today = new Date();
+    const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+    document.getElementById("date").innerHTML = today.toLocaleDateString('en-US', options);
+}
+
+function updateClock() {
+    let now = new Date();
+    let hours = now.getHours(), minutes = now.getMinutes(), seconds = now.getSeconds();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12;
+    document.getElementById("liveClock").innerHTML = hours.toString().padStart(2,'0') + ':' + minutes.toString().padStart(2,'0') + ':' + seconds.toString().padStart(2,'0') + ' ' + ampm;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+const darkBtn = document.querySelector('.dark-btn');
+if(darkBtn) darkBtn.onclick = () => {
+    document.body.classList.toggle('dark-mode');
+    darkBtn.innerHTML = document.body.classList.contains('dark-mode') ? '☀️ লাইট মোড' : '🌙 ডার্ক মোড';
+};
+
+// ========== সেকশন এলিমেন্ট ==========
+const heroSection = document.querySelector('.hero');
+const techSection = document.getElementById('techSection');
+const islamicSection = document.getElementById('islamicSection');
+const aiSection = document.getElementById('aiSection');
+const aboutSection = document.getElementById('aboutSection');
+const contactSection = document.getElementById('contactSection');
+const adBoxes = document.querySelectorAll('.ad-box');
+
+function hideAllSections() {
+    if(heroSection) heroSection.style.display = 'none';
+    if(techSection) techSection.style.display = 'none';
+    if(islamicSection) islamicSection.style.display = 'none';
+    
+    if(aiSection) { aiSection.classList.remove('active'); aiSection.style.display = 'none'; }
+    if(aboutSection) { aboutSection.classList.remove('active'); aboutSection.style.display = 'none'; }
+    if(contactSection) { contactSection.classList.remove('active'); contactSection.style.display = 'none'; }
+}
+
+function showHome() {
+    hideAllSections();
+    if(heroSection) heroSection.style.display = 'flex';
+    if(techSection) techSection.style.display = 'block';
+    adBoxes.forEach(ad => ad.style.display = 'block');
+}
+
+function showIslamic() {
+    hideAllSections();
+    if(islamicSection) islamicSection.style.display = 'block';
+    adBoxes.forEach(ad => ad.style.display = 'block');
+}
+
+function showTech() {
+    hideAllSections();
+    if(techSection) techSection.style.display = 'block';
+    adBoxes.forEach(ad => ad.style.display = 'block');
+}
+
+
+
+
+function showAI() {
+    hideAllSections();
+    if(aiSection) { aiSection.classList.add('active'); aiSection.style.display = 'block'; }
+}
+
+function showAbout() {
+    hideAllSections();
+    if(aboutSection) { aboutSection.classList.add('active'); aboutSection.style.display = 'block'; }
+}
+
+function showContact() {
+    hideAllSections();
+    if(contactSection) { contactSection.classList.add('active'); contactSection.style.display = 'block'; }
+}
+
+// নেভবার লিংক
+
+
+
+
+
+
+
+document.getElementById('homeLink').onclick = (e) => { e.preventDefault(); showHome(); window.scrollTo(0,0); };
+document.getElementById('islamicLink').onclick = (e) => { e.preventDefault(); showIslamic(); window.scrollTo(0,0); };
+document.getElementById('techLink').onclick = (e) => { e.preventDefault(); showTech(); window.scrollTo(0,0); };
+
+document.getElementById('aiLink').onclick = (e) => { e.preventDefault(); showAI(); window.scrollTo(0,0); };
+document.getElementById('contactLink').onclick = (e) => { e.preventDefault(); showContact(); window.scrollTo(0,0); };
+document.getElementById('aboutLink').onclick = (e) => { e.preventDefault(); showAbout(); window.scrollTo(0,0); };
+
+
+
+
+
+
+
+
+// হেডার ক্লিক
+
+
+// হেডার ক্লিক করলে হোমে যাবে ও সেভ হবে
+document.getElementById('homeHeader').onclick = () => {
+    localStorage.setItem('activeTab', 'home');
+    showHome();
+    window.scrollTo(0,0);
+};
+
+
+
+
+// ফুটার লিংক
+
+
+// ফুটার লিংক
+document.getElementById('footerHomeLink').onclick = (e) => {
+    e.preventDefault();
+    localStorage.setItem('activeTab', 'home');
+    showHome();
+    window.scrollTo(0,0);
+};
+document.getElementById('footerIslamicLink').onclick = (e) => {
+    e.preventDefault();
+    localStorage.setItem('activeTab', 'islamic');
+    showIslamic();
+    window.scrollTo(0,0);
+};
+document.getElementById('footerTechLink').onclick = (e) => {
+    e.preventDefault();
+    localStorage.setItem('activeTab', 'tech');
+    showTech();
+    window.scrollTo(0,0);
+};
+document.getElementById('footerAILink').onclick = (e) => {
+    e.preventDefault();
+    localStorage.setItem('activeTab', 'ai');
+    showAI();
+    window.scrollTo(0,0);
+};
+document.getElementById('footerContactLink').onclick = (e) => {
+    e.preventDefault();
+    localStorage.setItem('activeTab', 'contact');
+    showContact();
+    window.scrollTo(0,0);
+};
+document.getElementById('footerAboutLink').onclick = (e) => {
+    e.preventDefault();
+    localStorage.setItem('activeTab', 'about');
+    showAbout();
+    window.scrollTo(0,0);
+};
+
+
+
+
+
+// হিরো বাটন
+document.getElementById('exploreBtn').onclick = (e) => { e.preventDefault(); showTech(); window.scrollTo(0,0); };
+document.getElementById('heroContactBtn').onclick = (e) => { e.preventDefault(); showContact(); window.scrollTo(0,0); };
+
+// স্ক্রল টু টপ
+const scrollBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => scrollBtn.style.display = window.scrollY > 300 ? 'flex' : 'none');
+scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+
+
+
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const detailsDiv = document.getElementById(targetId);
+        if(detailsDiv) {
+            if(detailsDiv.style.display === 'none') {
+                detailsDiv.style.display = 'block';
+                this.textContent = '📖 সংক্ষেপ দেখুন';
+            } else {
+                detailsDiv.style.display = 'none';
+                this.textContent = '📖 বিস্তারিত পড়ুন';
+            }
+        } else {
+            console.log('এলিমেন্ট পাওয়া যায়নি:', targetId);
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========== ট্যাব সেভ করে রাখা (LocalStorage) ==========
+
+// সব ট্যাবের আইডি ও ফাংশনের ম্যাপিং
+const tabs = [
+    { id: 'homeLink', showFunction: showHome, name: 'home' },
+    { id: 'islamicLink', showFunction: showIslamic, name: 'islamic' },
+    { id: 'techLink', showFunction: showTech, name: 'tech' },
+    { id: 'aiLink', showFunction: showAI, name: 'ai' },
+    { id: 'contactLink', showFunction: showContact, name: 'contact' },
+    { id: 'aboutLink', showFunction: showAbout, name: 'about' }
+];
+
+// ট্যাবে ক্লিক করলে LocalStorage-এ সেভ করবে
+tabs.forEach(tab => {
+    const link = document.getElementById(tab.id);
+    if(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            localStorage.setItem('activeTab', tab.name);
+            tab.showFunction();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+});
+
+// পেজ লোড হলে আগের ট্যাব চেক করে দেখাবে
+function loadSavedTab() {
+    const savedTab = localStorage.getItem('activeTab');
+    
+    if(savedTab === 'home') showHome();
+    else if(savedTab === 'islamic') showIslamic();
+    else if(savedTab === 'tech') showTech();
+    else if(savedTab === 'ai') showAI();
+    else if(savedTab === 'contact') showContact();
+    else if(savedTab === 'about') showAbout();
+    else showHome(); // ডিফল্ট
+}
+
+// আগের নেভবার লিংকের ইভেন্টগুলি সরিয়ে দিন (যাতে ডুপ্লিকেট না হয়)
+// এবং loadSavedTab() দিয়ে রিপ্লেস করুন
+
+
+
+
+// শুরুতে সংরক্ষিত ট্যাব খুলবে
+loadSavedTab();
+</script>
+
+</body>
+</html>
